@@ -44,7 +44,7 @@ a:hover { text-decoration: underline !important; }
 	width: 90%;
 	font-size: 1em;
 	padding: 10px 11px 10px 10px;
-	background: url(assets/images/opacity.png) repeat;
+	background: url(arquivos/images/opacity.png) repeat;
 }
 .apiki-wp-content img { display: block; }
 .apiki-wp-content a { color: rgb(0, 0, 0); }
@@ -65,7 +65,16 @@ table tr td, table tr th {
 	border-bottom: 1px solid #858585;
 	padding: 13px 0;
 }
-
+.carousel-item {
+	height: 65vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+  
 
 h1, h2, h3, h4, h5, h6 { line-height: 100%; color: #000; }
 h1 { font-size: 2em; }
@@ -115,7 +124,7 @@ ul.page-numbers {
 	margin-top: 15px;
 }
 .page-numbers a.prev, .page-numbers a.next, #comments .prev, #comments .next {
-	background: url(assets/images/prev-next.png) no-repeat 0 4px;
+	background: url(arquivos/images/prev-next.png) no-repeat 0 4px;
 	color: #000;
 	padding: 5px 20px 5px 25px;
 	text-decoration: none;
@@ -186,7 +195,7 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 	width: 144px;
 }
 #search input[type="submit"] {
-	background: url(assets/images/search.png) no-repeat 0 0;
+	background: url(arquivos/images/search.png) no-repeat 0 0;
 	position: absolute;
 	top: 5px;
 	right: 7px;
@@ -211,7 +220,7 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 
 
 #featured {
-	background: #E6E6E6 url(assets/images/texture.png) repeat 0 0;
+	background: #E6E6E6 url(arquivos/images/texture.png) repeat 0 0;
 	height: 652px;
 	overflow: hidden;
 	padding: 0 0 15px 0;
@@ -243,7 +252,7 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 }
 
 #featured .button, .featured-single .button {
-	background: #FFC775 url(assets/images/bg-button.png) no-repeat 14px -195px;
+	background: #FFC775 url(arquivos/images/bg-button.png) no-repeat 14px -195px;
 	display: inline-block;
 	font-size: normal;
 	line-height: 100%;
@@ -261,7 +270,7 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 }
 
 #featured .prev, #featured .next {
-	background: url(assets/images/arrows.png) no-repeat 0 5px;
+	background: url(arquivos/images/arrows.png) no-repeat 0 5px;
 	position: absolute;
 	top: 50%;
 	margin-top: -75px;
@@ -281,7 +290,7 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 
  /** Featured **/
 #featured.featured-home {
-	background: #E6E6E6 url(assets/images/bg-featured-home.png) repeat-x 0 bottom;
+	background: #E6E6E6 url(arquivos/images/bg-featured-home.png) repeat-x 0 bottom;
 	height: 415px;
 	overflow: hidden;
 	padding: 15px 0 50px 0;
@@ -301,7 +310,6 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 }
 #featured.featured-home .title {
 	font-size: normal;
-	width: 400px;
 	line-height: 110%;
 	font-weight: normal;
 	background: rgb(255, 228, 189);
@@ -322,6 +330,7 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 	margin: 0 10px 0 0;
 	width: 234px;
 }
+
 #form-search select {
 	width: 176px;
 	*height: 30px;
@@ -356,7 +365,7 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 	margin: 16px 20px 0 0;
  }
 .filters li {
-	background: url(assets/images/ico-filter.png) no-repeat 6px center;
+	background: url(arquivos/images/ico-filter.png) no-repeat 6px center;
 	float: left;
 	position: relative;
 	padding-left: 30px;
@@ -411,7 +420,7 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 	margin-bottom: 25px;
 }
 .item .button {
-	background: url("assets/images/bg-button.png") no-repeat left 0;
+	background: url("arquivos/images/bg-button.png") no-repeat left 0;
 	color: #000000;
 	display: block;
 	font-size: 2.5em;
@@ -559,7 +568,7 @@ h3#comments {
 li.comment {
 	position: relative;
 	padding-top: 56px;
-	background: url(assets/images/bg-title-comment.png) repeat-x 0 36px;
+	background: url(arquivos/images/bg-title-comment.png) repeat-x 0 36px;
 	margin-bottom: 30px;
 	overflow: hidden;
 	width: 740px;
@@ -610,7 +619,7 @@ ul.children .comment-body p { width: 544px; }
 
 
 .comment-body {
-	background: url(assets/images/arrow-comment.png) no-repeat 27px 0;
+	background: url(arquivos/images/arrow-comment.png) no-repeat 27px 0;
 	padding: 10px;
 	overflow: hidden;
 	margin-top: -20px;
@@ -620,7 +629,7 @@ ul.children .comment-body p { width: 544px; }
 
 .bypostauthor { background: none !important; } 
 .bypostauthor .comment-body { 
-	background: rgb(158, 156, 156) url(assets/images/arrow-author.png) no-repeat 27px 0; 
+	background: rgb(158, 156, 156) url(arquivos/images/arrow-author.png) no-repeat 27px 0; 
 }
 .bypostauthor .fn { color: #999; }
 .bypostauthor .comment-body a { 
@@ -747,7 +756,7 @@ ul.children .comment-body p { width: 544px; }
 #footer .widget_calendar table, #footer .widget_archive, #footer .widget_archive a,
 #footer .widget_links ul, #footer .widget_links ul a { color: #fff; }
 #footer .widget_calendar caption {
-	background: url(assets/images/border.png) repeat-x 0 bottom;
+	background: url(arquivos/images/border.png) repeat-x 0 bottom;
 	padding-bottom: 14px;
 	border: 0;
 }
