@@ -1,8 +1,8 @@
-/** ==================== apiki-wp-content ====================**/
-.apiki-wp-content p,.apiki-wp-content h1,.apiki-wp-content h2,.apiki-wp-content h3,.apiki-wp-content h4,.apiki-wp-content h5,.apiki-wp-content h6,.apiki-wp-content ul,.apiki-wp-content ol,.apiki-wp-content dl{margin:0 0 1.3em}.apiki-wp-content ul{margin:0 0 1.3em 1.5em;list-style-type:disc}.apiki-wp-content ol{margin:0 0 1.3em 1.8em;list-style-type:decimal}.apiki-wp-content strong{font-weight:bold}.apiki-wp-content em{font-style:italic}.apiki-wp-content .alignright,.apiki-wp-content a img.alignright{float:right;margin:0 0 1em 1em; }.apiki-wp-content .alignleft,
-.apiki-wp-content a img.alignleft{float:left;margin:0 1em 1em 0 !important; }.apiki-wp-content .aligncenter,.apiki-wp-content a img.aligncenter{display:block;margin-left:auto !important;margin-right:auto !important; }.apiki-wp-content .wp-caption{margin:1em;padding:.5em;border:1px dashed #e5e5e5;background:#f7f7f7;font-size:.8em;color:#000}.apiki-wp-content .wp-caption-text{margin-bottom:0!important}
+/** ==================== Be With You ====================**/
+.bewithyou p,.bewithyou h1,.bewithyou h2, .bewithyou ul,.bewithyou ol,.bewithyou dl{margin:0 0 1.3em}.bewithyou ul{margin:0 0 1.3em 1.5em;list-style-type:disc}.bewithyou ol{margin:0 0 1.3em 1.8em;list-style-type:decimal}.bewithyou strong{font-weight:bold}.bewithyou em{font-style:italic}.bewithyou .alignright,.bewithyou a img.alignright{float:right;margin:0 0 1em 1em; }.bewithyou .alignleft,
+.bewithyou a img.alignleft{float:left;margin:0 1em 1em 0 !important; }.bewithyou .aligncenter,.bewithyou a img.aligncenter{display:block;margin-left:auto !important;margin-right:auto !important; }.bewithyou .wp-caption{margin:1em;padding:.5em;border:1px dashed #e5e5e5;background:#f7f7f7;font-size:.8em;color:#000}.bewithyou .wp-caption-text{margin-bottom:0!important}
 /** ====================  css reset ====================**/
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}
+html,body,div,span,applet,object,iframe,h1,h2,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}
 /** ====================  Grid  ====================**/
 .container{width:978px;margin:0px auto; position: relative;}.row{height:1%}.row-end{clear:both;font:1px/1px sans-serif;height:1px;overflow:hidden}.col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,div.col11,.col12{float:left;margin-left:30px}.col1:first-child,.col2:first-child,.col3:first-child,.col4:first-child,.col5:first-child,.col6:first-child,.col7:first-child,.col8:first-child,.col9:first-child,.col10:first-child,.col11:first-child,.col12:first-child{margin-left:0px}.col1{width:54px}.col2{width:138px}.col3{width:222px}.col4{width:306px}.col5{width:390px}.col6{width:474px}.col7{width:558px}.col8{width:642px}.col9{width:726px}.col10{width:810px}.col11{width:894px}.col12{width:978px}
 .alpha { margin-left: 0 !important; }
@@ -16,26 +16,22 @@ body { font: normal 10px/120%  Helvetica, Arial, sans-serif; }
 
 /** Tags **/
 a:hover { text-decoration: underline !important; }
-.apiki-wp-content {
+.bewithyou {
 	font-size: 1.6em;
 	color: #000;
 	line-height: 140%;
 	margin-bottom: 70px;
 }
-.apiki-wp-content h1 { font-size: 2px; }
-.apiki-wp-content h2 { font-size: 30px; }
-.apiki-wp-content h3 { font-size: 20px; }
-.apiki-wp-content h4 { font-size: 2em; }
-.apiki-wp-content h5 { font-size: 18px; }
-.apiki-wp-content h6 { font-size: 16px; }
+.bewithyou h1 { font-size: 2px; }
+.bewithyou h2 { font-size: 20px; }
 
-.apiki-wp-content .wp-caption {
+.bewithyou .wp-caption {
 	border: 0;
 	padding: 0;
 	position: relative;
 	background: #fff;
 }
-.apiki-wp-content .wp-caption-text {
+.bewithyou .wp-caption-text {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -46,14 +42,14 @@ a:hover { text-decoration: underline !important; }
 	padding: 10px 11px 10px 10px;
 	background: url(arquivos/images/opacity.png) repeat;
 }
-.apiki-wp-content img { display: block; }
-.apiki-wp-content a { color: rgb(0, 0, 0); }
-.apiki-wp-content a:visited { color: #666666; }
-.apiki-wp-content a:hover, .apiki-wp-content a:focus { color: #DC8E15; }
-.apiki-wp-content a:active { color: #C27D12; }
+.bewithyou img { display: block; }
+.bewithyou a { color: rgb(0, 0, 0); }
+.bewithyou a:visited { color: #666666; }
+.bewithyou a:hover, .bewithyou a:focus { color: #DC8E15; }
+.bewithyou a:active { color: #C27D12; }
 
-.apiki-wp-content ul { list-style-type: square; color: #666; }
-.apiki-wp-content ol { list-style-type: decimal; color: #666; }
+.bewithyou ul { list-style-type: square; color: #666; }
+.bewithyou ol { list-style-type: decimal; color: #666; }
 
 
 table {
@@ -65,24 +61,10 @@ table tr td, table tr th {
 	border-bottom: 1px solid #858585;
 	padding: 13px 0;
 }
-.carousel-item {
-	height: 65vh;
-	min-height: 300px;
-	background: no-repeat center center scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-  }
-  
 
-h1, h2, h3, h4, h5, h6 { line-height: 100%; color: #000; }
+h1, h2 { line-height: 100%; color: #000; }
 h1 { font-size: 2em; }
-h2 { font-size: 2.5em; }
-h3 { font-size: 2.5em; }
-h4 { font-size: normal; }
-h5 { font-size: 1.8em; }
-h6 { font-size: 1.6em; }
+h2 { font-size: 2.5em;}
 
 .title-page {
 	font-size: 4em;
@@ -153,11 +135,11 @@ header, header .container {
 	height: 100px;
 	position: relative;
 }
-/** branding  **/
-header .branding {
+/** Logo  **/
+header .logo {
 	position: absolute;
-	top: 19px;
-	left: 0;
+	top: 17px;
+	left: 4;
 }
 /** navigation **/
 header nav {
@@ -181,7 +163,7 @@ header nav a, #footer nav a {
 }
 header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 
-/** Search **/
+/** Pesquisa **/
 #search {
 	position: absolute;
 	top: 15px;
@@ -779,7 +761,7 @@ ul.children .comment-body p { width: 544px; }
 	color: #A2680F;
 	font-size: 1.6em;
 }
-#footer .others .branding {
+#footer .others .logo {
 	position: absolute;
 	top: 17px;
 	left: 0;
