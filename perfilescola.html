@@ -9,83 +9,53 @@
 	<!--[if IE]><link rel="shortcut icon" href="img/favicon.ico"><![endif]-->
 	<link rel="icon" href="assets/images/logo2.icon.png">
 </head>
+
 <body>
 
-	<div class="container" >
+	<div class="container">
 		<a class="links" id="paracadastro"></a>
 		<a class="links" id="paralogin"></a>
-		 
-		<div class="content">      
-		  <!--FORMULÁRIO DE LOGIN-->
-		  <div id="login">
-			<form method="post" action=""> 
-			  <h1>Login</h1> 
-			  <p> 
-				<label for="nome_login">Seu nome</label>
-				<input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
-			  </p>
-			   
-			  <p> 
-				<label for="email_login">Seu e-mail</label>
-				<input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
-			  </p>
-			   
-			  <p> 
-				<input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
-				<label for="manterlogado">Manter-me logado</label>
-			  </p>
-			   
-			  <p> 
-				<input type="submit" value="Logar" /> 
-			  </p>
-			   
-			  <p class="link">
-				Ainda não tem conta?
-				<a href="#paracadastro">Cadastre-se</a>
-			  </p>
-			</form>
-		  </div>
-	 
-		  <!--FORMULÁRIO DE CADASTRO-->
-		  <div id="cadastro">
-			<form method="post" action=""> 
-			  <h1>Cadastro</h1> 
-			   
-			  <p> 
-				<label for="nome_cad">Seu nome</label>
-				<input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
-			  </p>
-			   
-			  <p> 
-				<label for="email">Seu e-mail</label>
-				<input id="email" name="email" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
-			  </p>
-			   
-			  <p> 
-				<label for="password">Sua senha</label>
-				<input id="password" name="password" required="required" type="password" placeholder="...."/>
-			  </p>
-			   
-			  <p> 
-				<input type="submit" value="Cadastrar"/> 
-			  </p>
 
-			  <p>
-				  <button type="button" name="signup">Criar Conta</button>
-				  <button type="button" name="sign">Entar</button>
-			  </p>
-			   
-			  <p class="link">  
-				Já tem conta?
-				<a href="#paralogin"> Ir para Login </a>
-			  </p>
-			</form>
-			<script src="APP.js"></script>
-            <script src="cadastroescola.js"></script>
+		<div class="content">
 
-		  </div>
+
+
+			<!--FORMULÁRIO DE CADASTRO-->
+			<div id="cadastro">
+				<form method="post" action="">
+					<h1>Cadastro</h1>
+
+
+					<p>
+						<label for="email">Seu e-mail</label>
+						<input id="email" name="email" required="required" type="email"
+							placeholder="contato@htmlecsspro.com" />
+					</p>
+
+					<p>
+						<label for="password">Sua senha</label>
+						<input id="password" name="password" required="required" type="password" placeholder="...." />
+					</p>
+
+					<p>
+						<button type="button" name="signup">Criar Conta</button>
+						<button type="button" name="signin">Entar</button>
+					</p>
+
+					<p class="link">
+						Já tem conta?
+						<a href="#paralogin"> Ir para Login </a>
+					</p>
+				</form>
+				<!-- The core Firebase JS SDK is always required and must be listed first -->
+				<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+				<script src="APP.js"></script>
+				<script src="cadastroescola.js"></script>
+
+			</div>
 		</div>
-	  </div>  
+	</div>
 </body>
 
 </html>
