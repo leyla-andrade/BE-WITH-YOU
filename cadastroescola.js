@@ -6,7 +6,7 @@ const inputPassword = document.querySelector('input[name=password]');
 
 const firebaseAuth = firebase.auth();
 
-buttonSingUp.addEventListener('click', () =>{
+buttonSignUp.addEventListener('click', () =>{
     firebaseAuth.createUserWithEmailAndPassword(inputEmail.Value, inputPassword.value )
         .then(result => {
          alert('Conta feita com sucesso');
@@ -24,7 +24,7 @@ buttonSingUp.addEventListener('click', () =>{
     
 });
 
-buttonSingUp.addEventListener('click', () => {
+buttonSignUp.addEventListener('click', () => {
     firebaseAuth.signWithEmailAndPassword(inputEmail.value, inputPassword.value)
        .then(result => {
           console.log(result); 
