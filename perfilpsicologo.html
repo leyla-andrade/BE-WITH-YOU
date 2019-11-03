@@ -4,40 +4,148 @@
 <head>
 	<meta charset="utf-8" />
 	<title>BE WITH YOU</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="escola.css">
 	<!--[if lte IE 8]><script type="text/javascript" src="assets/javascript/html5.js"></script><![endif]-->
 	<!--[if IE]><link rel="shortcut icon" href="img/favicon.ico"><![endif]-->
 	<link rel="icon" href="assets/images/logo2.icon.png">
 </head>
-<body>
 
-	<div id="wrapper">
-		<header>
-			<section class="container">
-				<h1 class="branding">
-					<a href="index.html" title="BE WITH YOU"><img src="assets/images/logo1.png" width="194" height="81"
-							alt="BE WITH YOU"></a>
-				</h1>
+<body background="assets/images/janko-ferlic-specialdaddy-sfL_QOnmy00-unsplash.jpg">
 
-				<nav>
-					<ul>
-						<li><a href="index.html" title="início">INICIO</a></li>
-						<li><a href="passatempo.html" title="Passatempos">PASSATEMPOS</a></li>
-						<li><a href="campanhas.html" title="Campanhas">CAMPANHAS</a></li>
-						<li><a href="colaboradores.html" title="Conexão">CONEXÃO</a></li>
-						<li><a href="sobrenos.html" title="Sobre">SOBRE</a></li>
-					</ul>
-				</nav>
+	<div class="cadastroaluno">
+		<a class="links" id="paracadastro"></a>
+		<a class="links" id="paralogin"></a>
 
-				<div id="search">
-					<form action="#">
-						<input type="text" value="Buscar">
-						<input type="submit">
-					</form>
-				</div><!-- / search -->
-			</section><!-- / container -->
-		</header><!-- / header -->
-		<section id="wrapper-content">
+		<div class="geral">
+			<!--FORMULÁRIO DE LOGIN-->
+			<div id="login">
+				<form method="post" action="">
+					<h4>Login</h4>
+
+					<p>
+						<label for="email">E-mail:</label>
+						<input id="email" name="email" required="required" type="email" placeholder="E-mail" />
+					</p>
+
+					<p>
+						<label for="password">Senha:</label>
+						<input id="password" name="password" required="required" type="password" placeholder="...." />
+					</p>
+
+					<p>
+						<input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+						<label for="manterlogado">Manter-me logado</label>
+					</p>
+
+					<p>
+						<button type="button" name="signin">Entrar</button>
+					</p>
+
+					<p class="link">
+						Ainda não tem conta?
+						<a href="#paracadastro">Cadastre-se</a>
+					</p>
+				</form>
+			</div>
+
+			<!--FORMULÁRIO DE CADASTRO-->
+			<div id="cadastro">
+				<form method="post" action="">
+					<h4>Cadastro</h4>
+
+					<p>
+						<label for="formacao">Formação:</label>
+						<span class="required">*</span>
+					</p>
+
+                    <p>
+						<input id="formacao" name="formacao" required="required" type="checkbox"/>
+						<label for="formacao">Psicologo</label>
+					</p>
+
+					<p>
+						<input id="formacao" name="formacao" required="required" type="checkbox"/>
+						<label for="formacao">Psicopedagogo</label>
+					</p>
+
+					<p>
+						<label for="nome">Seu Nome:</label>
+						<span class="required">*</span>
+						<input id="nome" name="nome" required="required" type="text" placeholder="Nome" />
+					</p>
+					<p>
+						<label for=cpb>Número Do CPB:</label>
+						<span class="required">*</span>
+						<input id="cpb" name="cpb" required="required" type="number" placeholder="Número" />
+					</p>
+
+					<p>
+						<label for="email">E-mail:</label>
+						<span class="required">*</span>
+						<input id="email" name="email" required="required" type="email" placeholder="E-mail" />
+					</p>
+
+					<p>
+						<label for="password">Senha:</label>
+						<span class="required">*</span>
+						<input id="password" name="password" required="required" type="password" placeholder="...." />
+					</p>
+
+					<p>
+						<label for="volu">Voluntário:</label>
+						<span class="required">*</span>
+					</p>
+
+					<p>
+						<input id="volu" name="volu" required="required" type="checkbox"/>
+						<label for="volu">Sim</label>
+					</p>
+
+					<p>
+						<input id="volu" name="volu" required="required" type="checkbox"/>
+						<label for="volu">Não</label>
+					</p>
+
+					<p>
+						<label for="atuacao">Atuação:</label>
+						<span class="required">*</span>
+					</p>
+
+					<p>
+						<input id="atuacao" name="atuacao" required="required" type="checkbox"/>
+						<label for="atuacao">Formada</label>
+					</p>
+
+					<p>
+						<input id="atuacao" name="atuacao" required="required" type="checkbox"/>
+						<label for="atuacao">Estudante</label>
+					</p>
+
+					<p>
+						<label for="estado">Estado:</label>
+						<span class="required">*</span>
+						<input id="estado" name="estado" required="required" type="text" placeholder="Estado" />
+					</p>
+
+
+					<p>
+						<button type="button" name="signup">Cadastrar</button>
+					</p>
+
+					<p class="link">
+						Já tem conta?
+						<a href="#paralogin"> Ir para Login </a>
+					</p>
+				</form>
+				<!-- The core Firebase JS SDK is always required and must be listed first -->
+				<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+				<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+				<script src="APP.js"></script>
+				<script src="cadastroescola.js"></script>
+
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

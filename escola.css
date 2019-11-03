@@ -51,19 +51,19 @@
   }
    
   label{
-    color: #f3e637;
+    color: #cac24d;
     position: relative;
   }
  
   /* placeholder */
   ::-webkit-input-placeholder  {
-    color: #bebcbccb; 
+    color: #bebcbcc9; 
     font-style: italic;
   }
    
   input:-moz-placeholder,
   textarea:-moz-placeholder{
-    color: #bebcbcc9;
+    color: #bebcbcfa;
     font-style: italic;
   }
   
@@ -155,7 +155,7 @@
     width: 88%;   
     padding: 18px 6% 60px 6%;
     margin: 0 0 35px 0;
-    background: #f7f7f7b6;
+    background: #f7f7f7;
     border: 1px solid rgba(147, 184, 189, 0.767);  
     border-radius: 5px;
      
@@ -231,3 +231,4 @@
       transform: translateX(-20px);
     }
   }
+  
