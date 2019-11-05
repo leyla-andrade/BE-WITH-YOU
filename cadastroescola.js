@@ -1,14 +1,13 @@
 const buttonSignUp = document.querySelector('button[name=signup]');
 const buttonSignIn = document.querySelector('button[name=signin]');
-
-const inputEmail = document.querySelector('input[name=email]');
-const inputPassword = document.querySelector('input[name=password]');
-
 const firebaseAuth = firebase.auth();
 
 buttonSignUp.addEventListener('click', () => {
-    firebaseAuth.createUserWithEmailAndPassword(inputEmail.value, inputPassword.value)
-        .then(result => {
+    const inputEmail = document.getElementById('emailEscola').value;
+    const inputPassword = document.getElementById('passwordEscola').value;
+    
+    firebaseAuth.createUserWithEmailAndPassword(inputEmail, inputPassword)
+    .then(result => {
             alert('Conta feita com sucesso');
             console.log(result);
             const user = result.user;
@@ -25,7 +24,9 @@ buttonSignUp.addEventListener('click', () => {
 });
 
 buttonSignIn.addEventListener('click', () => {
-    firebaseAuth.signWithEmailAndPassword(inputEmail.value, inputPassword.value)
+    const inputEmail = document.getElementById('emailEscola').value;
+    const inputPassword = document.getElementById('passwordEscola').value;
+    firebaseAuth.signWithEmailAndPassword(inputEmail, inputPassword)
         .then(result => {
             console.log(result);
         }).catch(err => {
