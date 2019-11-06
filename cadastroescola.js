@@ -1,8 +1,8 @@
-const buttonSignUp = document.querySelector('button[name=signup]');
+const buttonSign = document.querySelector('button[name=sign]');
 const buttonSignIn = document.querySelector('button[name=signin]');
 const firebaseAuth = firebase.auth();
 
-buttonSignUp.addEventListener('click', () => {
+buttonSign.addEventListener('click', () => {
     const inputEmail = document.getElementById('emailEscola').value;
     const inputPassword = document.getElementById('passwordEscola').value;
     
