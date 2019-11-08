@@ -9,11 +9,14 @@
 <body>
     <div id="formAluno">
         <h1>FORMULÁRIO DE AVALIAÇÃO</h1>
-        <form method="post">
+        <form method="post" class="form-group">
             <div>
-                <label for="nome">Nome Da Escola:</label>
-				<span class="required">*</span>
-				<input id="nome" name="nome" required="required" type="text" placeholder="Nome" />
+                <label for="nome">Nome da escola</label>
+				<input id="nome" name="nome" required="required" type="text" placeholder="Nome da escola"/>
+            </div>
+            <div>
+                <label for="nome">Data do depoimento</label>
+				<input id="data" name="data" required="required" type="date"/>
             </div>
              <p>Você já foi vítima de alguma das situações abaixo?</p>
             <div>
@@ -44,10 +47,25 @@
                 <input type="checkbox" id="isolamento" name="isolamento">
                 <label for="isolamento">Isolamento</label>
             </div>
+            <p>Você já se sentiu intimidado (a) por algum desses perfis?</p>
+            <div>
+                <input type="checkbox" id="professores" name="professores">
+                <label for="professores">Professores</label>     
+            </div>
+            <div>
+                <input type="checkbox" id="cozinheiros" name="cozinheiros">
+                <label for="cozinheiros">Cozinheiros</label>     
+            </div>
+            <div>
+                <input type="checkbox" id="segurancas" name="segurancas">
+                <label for="segurancas">Seguranças</label>     
+            </div>
+            <div>
+                <input type="checkbox" id="segurancas" name="segurancas">
+                <label for="segurancas">Seguranças</label>     
+            </div>
             
-            
-
-
+            <button type="submit" name="enviar" formmethod="post">Enviar</button>
         </form>
     </div>
 </body>
