@@ -139,6 +139,8 @@ header, header .container {
 	height: 100px;
 	position: relative;
 	box-shadow: 5px 2px 5px;
+	justify-content: space-around;
+	display: flex;
 }
 /** branding  **/
 header .branding {
@@ -155,17 +157,18 @@ header nav {
 }
 header nav li, .footer nav li { float: left; }
 header nav a, .footer nav a {
-	display: block;
-	background:  rgba(255, 239, 216, 0.349);
+	display: flex;
+	background:  rgba(249, 253, 186, 0.349);
 	color: black;
 	text-decoration: none;
-	font-size: 1.8em;
+	justify-content: space-around;
+	font-size: 1.5em;
 	margin: 0 0 0 25px;
-	line-height: 120%;
-	-moz-transition: 0.2s;
-	-webkit-transition: 0.2s;
-	-o-transition: 0.2s;
-	transition: 0.2s;
+	line-height: 100%;
+	-moz-transition: 1.9s;
+	-webkit-transition: 1.0s;
+	-o-transition: 1.0s;
+	transition: 1.0s;
 }
 header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 
@@ -610,10 +613,28 @@ ul.children .comment-body p { width: 544px; }
 }
 
 /** ======== cadastro ========== **/
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+    font-family: Arial,sans-serif;
+  }
+   
+  /* remove a linha dos links */
+  a{
+    text-decoration: none;
+  }
+   
+  /* esconde as ancoras da tela */
+  a.links{
+    display: none;
+  }
+  
 .geral{
+	width: 70%;
     min-height: 560px;    
     margin: 0px auto;
-    position: relative;   
+	position: relative;
+	justify-content: center;   
   }
 
   h4{
@@ -710,8 +731,8 @@ ul.children .comment-body p { width: 544px; }
     background: #e1eaeb;
     color: #7f7c7ca6;
     left: 0px;
-    height: 20px;
-    width: 440px;
+    height: 45px;
+    width: 100%;
     padding: 17px 30px 20px 30px;
     font-size: 16px;
     text-align: right;
@@ -752,7 +773,7 @@ ul.children .comment-body p { width: 544px; }
     background: #f7f7f7;
     border: 1px solid rgba(147, 184, 189, 0.767);  
     border-radius: 5px;
-     
+    justify-content: center;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: both;
@@ -825,6 +846,14 @@ ul.children .comment-body p { width: 544px; }
       transform: translateX(-20px);
     }
   }
-  .nav-tabs{
-	  justify-content: center;
-  }
+ .nav-tabs{
+   justify-content: center;
+   	
+ }
+ .nav-item{
+	width:100px; 
+ }
+ .nav-link {
+	font-size: 2em; 
+
+ }
