@@ -138,9 +138,11 @@ header, header .container {
 	background: #ffffff;
 	height: 100px;
 	position: relative;
+	box-shadow: 5px 2px 5px;
 }
 /** branding  **/
 header .branding {
+	width: 60px;
 	position: absolute;
 	top: 19px;
 	left: 0;
@@ -167,32 +169,6 @@ header nav a, .footer nav a {
 }
 header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 
-/** Search **/
-.search {
-	position: absolute;
-	top: 15px;
-	right: 0;
-}
-.search input[type="text"] {
-	background: rgba(255, 239, 216, 0.349);
-	border:0;
-	color: black;
-	padding: 5px 26px 5px 10px;
-	width: 144px;
-}
-.search input[type="submit"] {
-	background: url(assets/images/search.png) no-repeat 0 0;
-	position: absolute;
-	top: 5px;
-	right: 7px;
-	border: 0;
-	width: 13px;
-	height: 16px;
-	cursor: pointer;
-	text-transform: uppercase; /** for bug ie 7 **/
-	text-indent: -99999px;
-}
-.search .screen-reader-text { display: none }
 
 
 /** ========== Wrapper-content ==========**/
@@ -228,23 +204,7 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 	color: #000;
 	text-decoration: none;
 }
-.featured .button, .featured-single .button {
-	background: #FFC775 url(assets/images/bg-button.png) no-repeat 14px -195px;
-	display: inline-block;
-	font-size: normal;
-	line-height: 100%;
-	color: black;
-    font-weight: normal;
-	text-decoration: none;
-	padding: 13px 15px 13px 97px;
-}
-.featured-single .button { font-size: 1.9em; }
-.featured .button span, .featured-single .button span {
-	font-size: 2.5em;
-	letter-spacing: -2px;
-	display: block;
-	margin: 17px 0 10px 0;
-}
+
 .featured .prev, .featured .next {
 	background: url(assets/images/arrows.png) no-repeat 0 5px;
 	position: absolute;
@@ -281,124 +241,37 @@ header nav a:hover, header nav a:focus { color: rgb(226, 204, 106); }
 	background: rgb(255, 228, 189);
 	display: inline;
 }
+
+
+/** ========== products ==========**/
+.item { margin-bottom: 67px; }
+.item .title-item {
+	margin: 8px 0 22px 0;
+	line-height: 110%;
+	font-size: 2em;
+}
+.item .title-item a {
+	color: #000;
+	text-decoration: none;
+}
 .texto {
 	font-size: 1.7em;
 	line-height: 115%;
 	color: #333333;
 	margin-bottom: 25px;
 }
-.button {
-	background: url("assets/images/bg-button.png") no-repeat left 0;
-	color: #000000;
-	display: block;
-	font-size: 2.5em;
-	padding: 12px 0 15px 45px;
-	text-decoration: none;
-}
-
-
-
-/** ========== Search ==========**/
-.search { margin-bottom: 40px; }
-#form-search { margin: 0 0 40px 0; }
-#form-search input[type="text"], #form-search select {
-	border: 1px solid #CCCCCC;
-	background: #fff;
-	font: normal 1.6em/120%  Helvetica, Arial, sans-serif;
-	padding: 5px 10px 5px 10px;
-	border-radius: 4px;
-	margin: 0 10px 0 0;
-	width: 234px;
-}
-#form-search select {
-	width: 176px;
-	*height: 30px;
-	cursor: pointer;
-}
-#form-search input[type="submit"] {
-	border: 0;
-	background: #FFA517;
-	height: 30px;
-	font-size: 1.4em;
-	color: #FFFFFF;
-	padding: 0 13px;
-	cursor: pointer;
-	*padding: 0 1px;
-}
-
-.result {
-	font-weight: normal;
-	font-size: 2.2em;
-	margin-bottom: 15px;
-	line-height: 120%;
-	color: #333;
-}
-.result span { color: #FFA517; }
-.result.no-results span { color: #8C0000; }
-
-.filters { overflow: hidden; }
-.filters h6 {
-	color: #aaa;
-	font-size: 1.3em;
-	float: left;
-	margin: 16px 20px 0 0;
- }
-.filters li {
-	background: url(assets/images/ico-filter.png) no-repeat 6px center;
-	float: left;
-	position: relative;
-	padding-left: 30px;
-	margin-bottom: 13px;
-}
-.filters li:first-child {
-	background: none;
-	padding-left: 0;
-}
-.filters li span {
-	background: #999999;
-	color: #fff;
-	display: inline-block;;
-	padding: 8px 10px;
-	line-height: 100%;
-	font-size: 1.3em;
-	border-radius: 7px;
-}
-.filters ul { overflow: hidden; padding: 5px 0; }
-.filters .close {
-	background: #555555;
-	display: inline-block;
-	position: absolute;
-	top: -3px;
-	right: -3px;
-	z-index: 1;
-	width: 12px;
-	height: 12px;
-	color: #ffffff;
-	line-height: 10px;
-	text-align: center;
-	border-radius: 100px;
-	text-decoration: none;
-}
 
 /** ========== news =========**/
-.news { clear: both; margin: 0 0 50px 0; }
+
+.news { clear: both; margin : 0 0 50px 0; }
 .news .item {	margin: 0 0 20px 0; }
 .news .title-item {	margin: 0 0 8px 0; }
-.imagens { float: left; margin-right: 10px; }
-.titulo {
+.news .item .imagens { float: left; margin-right: 10px; }
+.news .item .titulo {
 	max-width: 600px;
 	overflow: hidden;
 	margin-bottom: -15px;
 }
-.news .button {
-	padding: 11px 10px;
-	background: #FFA617;
-	color: #000000;
-	text-decoration: none;
-	font-size: 2em;
-	display: inline-block;
-}
-
 
 /** ========== Sidebar ==========**/
 .reverse #content { float: left; }
@@ -680,8 +553,8 @@ ul.children .comment-body p { width: 544px; }
 
 /** ========== featured-single ==========**/
 .featured-single { margin-bottom: 40px; overflow: hidden; }
-.featured-single .thumbnail { float: left; }
-.featured-single .description {
+.featured-single .imagens { float: left; }
+.featured-single .titulo {
 	float: right;
 	width: 300px;
 }
