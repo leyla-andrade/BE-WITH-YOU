@@ -861,10 +861,13 @@ ul.children .comment-body p { width: 544px; }
  }
  
  .nav-link {
-	font-size: 1.5em; 
+	font-size: 2em; 
+	color: yellow;
 
 }
-
+.nav-item{
+	color: yellow;
+}
 .carousel-item {
     height: 65vh;
     min-height: 500px;
@@ -874,3 +877,7 @@ ul.children .comment-body p { width: 544px; }
     -o-background-size: cover;
     background-size: cover;
  }
+
+.bg-light{
+  background-color: white;	
+}
