@@ -15,7 +15,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /** ================================ Layout ================================**/
 
-body { font: normal 10px/120%  Helvetica, Arial, sans-serif; }
+body { font: normal 10px/120%  Helvetica, Arial, sans-serif; overflow-x: hidden;}
 
 h1{ line-height: 100%; color: #000; }
 h1 { font-size: 2.5em; }
@@ -307,9 +307,9 @@ ul.children .comment-body p { width: 544px; }
   }
   
 .geral{
-	width: 70%;
-    min-height: 560px;    
-    margin: 0px auto;
+	/* width: 70%; */
+  min-height: 560px;    
+  margin: 0px auto;
 	position: relative;
 	justify-content: center;   
   }
@@ -450,7 +450,6 @@ ul.children .comment-body p { width: 544px; }
     background: #f7f7f7;
     border: 1px solid rgba(147, 184, 189, 0.767);  
     border-radius: 5px;
-    justify-content: flex-end;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: both;
@@ -459,7 +458,20 @@ ul.children .comment-body p { width: 544px; }
     animation-timing-function: ease;
     animation-fill-mode: both;
   }
- 
+  
+/* Cadastro Escola */
+
+  .cadastroescola{
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .bg-form{
+    background: #666666;
+  }
+
+  /* End Cadastro Escola */
+
   /* Efeito ao clicar no botão ( Ir para Login ) */
   #paracadastro:target ~ .geral #cadastro,
   #paralogin:target ~ .geral #login{

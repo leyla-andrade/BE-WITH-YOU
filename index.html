@@ -16,14 +16,18 @@
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
 	<script src="APP.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="http://slick/slick.min.js"></script>
 </head>
 
 <body>
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light fixed-top">
 		<div class="container">
-			<a  href="index.html"><img src="assets/images/logo oficial.png"
-					width="355" height="68" alt="BE WITH YOU"></a>
+			<a href="index.html"><img src="assets/images/logo oficial.png" width="355" height="68"
+					alt="BE WITH YOU"></a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
 				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -32,7 +36,7 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="index.html">Inicio</a>
+						<a class="nav-link" href="index.html">Início</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="campanhas.html">Campanhas</a>
@@ -88,56 +92,110 @@
 
 
 	<section id="wrapper-content">
-		<div class="cadastroescola">
-			<a class="links" id="paracadastro"></a>
-			<a class="links" id="paralogin"></a>
+		<div class="row">
+			<div class="col-lg-6 col-md-6">
+				<img src="assets/images/logo2.icon.png">
+			</div>
+			<div class="cadastroescola col-lg-6 col-md-12">
+				<a class="links" id="paracadastro"></a>
+				<a class="links" id="paralogin"></a>
 
-			<div class="geral">
+				<div class="geral">
+					<div class="bg-form">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+									aria-controls="home" aria-selected="true">Entrar</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#perfil" role="tab"
+									aria-controls="profile" aria-selected="false">Cadastro</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<div class="geral">
+									<!--FORMULÁRIO DE LOGIN-->
+									<div id="login">
+										<form method="post" action="">
+											<h2>Login</h2>
 
-				<ul class="nav nav-tabs" id="myTab" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-							aria-controls="home" aria-selected="true">Entrar</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#perfil" role="tab"
-							aria-controls="profile" aria-selected="false">Cadastro</a>
-					</li>
-				</ul>
-				<div class="tab-content" id="myTabContent">
-					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-						<div class="geral">
-							<!--FORMULÁRIO DE LOGIN-->
-							<div id="login">
-								<form method="post" action="">
-									<h2>Login</h2>
+											<p>
+												<label for="email">E-mail Da Escola:</label>
+												<input id="email" name="email" required="required" type="email"
+													placeholder="E-mail" />
+											</p>
 
-									<p>
-										<label for="email">E-mail Da Escola:</label>
-										<input id="email" name="email" required="required" type="email"
-											placeholder="E-mail" />
-									</p>
+											<p>
+												<label for="password">Senha:</label>
+												<input id="password" name="password" required="required" type="password"
+													placeholder="...." />
+											</p>
 
-									<p>
-										<label for="password">Senha:</label>
-										<input id="password" name="password" required="required" type="password"
-											placeholder="...." />
-									</p>
+											<p>
+												<input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+												<label for="manterlogado">Manter-me logado</label>
+											</p>
 
-									<p>
-										<input type="checkbox" name="manterlogado" id="manterlogado" value="" />
-										<label for="manterlogado">Manter-me logado</label>
-									</p>
+											<p>
+												<button type="button" name="signin">Entrar</button>
+											</p>
 
-									<p>
-										<button type="button" name="signin">Entrar</button>
-									</p>
+											<p class="link">
+												Ainda não tem conta?
+												<a href="#paracadastro">Cadastre-se</a>
+											</p>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+									aria-controls="home" aria-selected="true">Entrar</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#perfil" role="tab"
+									aria-controls="profile" aria-selected="false">Cadastro</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-									<p class="link">
-										Ainda não tem conta?
-										<a href="#paracadastro">Cadastre-se</a>
-									</p>
-								</form>
+								<!--FORMULÁRIO DE LOGIN-->
+								<div id="login">
+									<form method="post" action="">
+										<h2>Login</h2>
+
+										<p>
+											<label for="email">E-mail Da Escola:</label>
+											<input id="email" name="email" required="required" type="email"
+												placeholder="E-mail" />
+										</p>
+
+										<p>
+											<label for="password">Senha:</label>
+											<input id="password" name="password" required="required" type="password"
+												placeholder="...." />
+										</p>
+
+										<p>
+											<input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+											<label for="manterlogado">Manter-me logado</label>
+										</p>
+
+										<p>
+											<button type="button" name="signin">Entrar</button>
+										</p>
+
+										<p class="link">
+											Ainda não tem conta?
+											<a href="#paracadastro">Cadastre-se</a>
+										</p>
+									</form>
+								</div>
+
 							</div>
 						</div>
 					</div>
@@ -255,56 +313,56 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		</div>
+		<div class="comments">
+			<div class="container">
 
-			<div class="comments">
-				<div class="container">
+				<div id="respond">
+					<h1 id="reply-title">Comunique-se conosco!!
+						<small>
+							<a rel="nofollow" id="cancel-comment-reply-link" href="#">Cancelar Resposta</a>
+						</small>
+					</h1>
+					<form action="http://localhost/wp-teste/wp-comments-post.php" method="post" id="commentform">
+						<p class="comment-notes">Seu endereço de e-mail não será publicado. Os campos
+							obrigatórios
+							estão
+							marcados.
+							<span class="required">*</span>
+						</p>
 
-					<div id="respond">
-						<h1 id="reply-title">Comunique-se conosco!!
-							<small>
-								<a rel="nofollow" id="cancel-comment-reply-link" href="#">Cancelar Resposta</a>
-							</small>
-						</h1>
-						<form action="http://localhost/wp-teste/wp-comments-post.php" method="post" id="commentform">
-							<p class="comment-notes">Seu endereço de e-mail não será publicado. Os campos
-								obrigatórios
-								estão
-								marcados.
-								<span class="required">*</span>
-							</p>
+						<p class="comment-form-author">
+							<label for="author">Nome e Sobrenome</label>
+							<span class="required">*</span>
+							<input id="author" name="author" type="text" value="Lorem ipsum" size="30"
+								aria-required="true">
+						</p>
+						<p class="comment-form-email">
+							<label for="email">E-mail</label>
+							<span class="required">*</span>
+							<input id="email" name="email" type="text" value="luantop12@hotmail.com" size="30"
+								aria-required="true">
+						</p>
+						<p class="comment-form-url">
+							<label for="url">Música que você mais gosta</label>
+							<input id="url" name="url" type="text" value="http://www.youtube.com/watch?v=pa14VNsdSYM"
+								size="30">
+						</p>
+						<p class="comment-form-comment">
+							<label for="comment">Deixe sua Mensagem!!</label>
+							<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+						</p>
+						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Postar Mensagem">
+							<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
+							<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+						</p>
+					</form>
+				</div>
 
-							<p class="comment-form-author">
-								<label for="author">Nome e Sobrenome</label>
-								<span class="required">*</span>
-								<input id="author" name="author" type="text" value="Lorem ipsum" size="30"
-									aria-required="true">
-							</p>
-							<p class="comment-form-email">
-								<label for="email">E-mail</label>
-								<span class="required">*</span>
-								<input id="email" name="email" type="text" value="luantop12@hotmail.com" size="30"
-									aria-required="true">
-							</p>
-							<p class="comment-form-url">
-								<label for="url">Música que você mais gosta</label>
-								<input id="url" name="url" type="text"
-									value="http://www.youtube.com/watch?v=pa14VNsdSYM" size="30">
-							</p>
-							<p class="comment-form-comment">
-								<label for="comment">Deixe sua Mensagem!!</label>
-								<textarea id="comment" name="comment" cols="45" rows="8"
-									aria-required="true"></textarea>
-							</p>
-							<p class="form-submit">
-								<input name="submit" type="submit" id="submit" value="Postar Mensagem">
-								<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
-								<input type="hidden" name="comment_parent" id="comment_parent" value="0">
-							</p>
-						</form>
-					</div>
-
-				</div><!-- / container -->
-			</div><!-- / comments -->
+			</div><!-- / container -->
+		</div><!-- / comments -->
 
 		</div>
 
@@ -339,5 +397,11 @@
 		<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 		<script src="bootstrap/javascript/jquery.min.js"></script>
 </body>
+
+<script>
+	$(document).ready(function () {
+		$('.carousel').slick();
+	}
+</script>
 
 </html>
