@@ -1,0 +1,10 @@
+buttonSignIn.addEventListener('click', () => {
+    const inputEmail = document.getElementById('emailInput').value;
+    const inputPassword = document.getElementById('passwordEscola').value;
+    firebaseAuth.signWithEmailAndPassword(inputEmail, inputPassword)
+        .then(result => {
+            console.log(result);
+        }).catch(err => {
+            console.log(err);
+        })
+});

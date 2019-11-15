@@ -8,41 +8,47 @@
 	<!--[if lte IE 8]><script type="text/javascript" src="assets/javascript/html5.js"></script><![endif]-->
 	<!--[if IE]><link rel="shortcut icon" href="img/favicon.ico"><![endif]-->
 	<link rel="icon" href="assets/images/logo2.icon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light fixed-top shadow p-3 mb-5 bg-white rounded">
 
+		<div class="container">
+			<a href="index.html"><img src="assets/images/logo oficial.png" width="355" height="68"
+					alt="BE WITH YOU"></a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Início</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="campanhas.html">Campanhas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="conexao.html">Conexão</a>
+					</li>
+				</ul>
+			</div>
+			<a href="form.html" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Questionário
+				Aluno</a>
+		</div>
+
+	</nav>
 	<div id="wrapper">
-		<header>
-			<section class="container">
-				<h1 class="branding">
-					<a href="index.html" title="BE WITH YOU"><img src="assets/images/logo1.png" width="194" height="81"
-							alt="BE WITH YOU"></a>
-				</h1>
 
-				<nav>
-					<ul>
-						<li><a href="index.html" title="início">INICIO</a></li>
-						<li><a href="passatempo.html" title="Passatempos">PASSATEMPOS</a></li>
-						<li><a href="campanhas.html" title="Campanhas">CAMPANHAS</a></li>
-						<li><a href="colaboradores.html" title="Conexão">CONEXÃO</a></li>
-						<li><a href="sobrenos.html" title="Sobre">SOBRE</a></li>
-					</ul>
-				</nav>
-
-				<div id="search">
-					<form action="#">
-						<input type="text" value="Buscar">
-						<input type="submit">
-					</form>
-				</div><!-- / search -->
-			</section><!-- / container -->
-		</header><!-- / header -->
 		<section id="wrapper-content">
 
 			<div class="container reverse">
 				<div class="col9 omega" id="content">
-					<h1 class="title-page">O QUE FAZER COM OS PENSAMENTOS NEGATIVOS?</h1>
+					<h2>O QUE FAZER COM OS PENSAMENTOS NEGATIVOS?</h2>
 
 					<div class="apiki-wp-content post">
 						<p>5 atitudes que afastam os pensamentos negativos</p>
@@ -56,7 +62,7 @@
 							conheça os psicólogos que prestam serviços de psicologia no nosso consultório, veja o
 							valor das sessões e agende sua consulta aqui mesmo pelo site.
 						</p>
-			
+
 						<p> 2. Acostume-se a ver o lado bom das coisas
 							Isso é uma questão de hábito. Pessoas que estão acostumadas a procurar o lado negativo
 							dos acontecimentos não mudam de atitude de uma hora para outra. Mas com força de vontade
@@ -97,7 +103,7 @@
 				<aside class="col3 alpha" id="sidebar">
 
 					<aside id="categories-2" class="widget widget_categories">
-						<h3 class="widget-title">Recomendações</h3>
+						<h1 class="widget-title">Recomendações</h1>
 						<ul>
 							<li class="cat-item cat-item-1">
 								<a href="#" title="#">Livros:</a>
@@ -121,7 +127,7 @@
 											alt="BE WITH YOU" title="BE WITH YOU">
 										CURA
 									</a>
-									Às vezes é preciso retirar-se por um tempo para o processo de cura. Uma perda,
+									<p>Às vezes é preciso retirar-se por um tempo para o processo de cura. Uma perda,
 									uma tristeza,
 									uma doença ou um desânimo não podem sempre ser encarados como superficiais.
 									Algumas feridas
@@ -129,7 +135,7 @@
 									certeza de
 									que é uma situação passageira. Tão logo a cura se faça, volte para a vida, pois
 									ela te
-									espera com ansiedade.
+									espera com ansiedade.</p>
 								</li>
 
 							</ul>
@@ -140,7 +146,7 @@
 			</div><!-- / top-five -->
 
 			</aside>
-</div><!-- / container -->
+	</div><!-- / container -->
 
 	</div><!-- / container -->
 </body>

@@ -336,6 +336,7 @@ ul.children .comment-body p { width: 544px; }
   
   p{
     margin-bottom:15px;
+    font-size: 1.5em;
   }
    
   .geral p:first-child{
@@ -464,10 +465,6 @@ ul.children .comment-body p { width: 544px; }
   .cadastroescola{
     width: 80%;
     margin-top: 20px;
-  }
-
-  .bg-form{
-    background: #666666;
   }
 
   /* End Cadastro Escola */

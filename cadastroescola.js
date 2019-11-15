@@ -3,8 +3,8 @@ const buttonSignIn = document.querySelector('button[name=signin]');
 const firebaseAuth = firebase.auth();
 
 buttonSign.addEventListener('click', () => {
-    const inputEmail = document.getElementById('emailEscola').value;
-    const inputPassword = document.getElementById('passwordEscola').value;
+    const inputEmail = document.getElementById('emailInput').value;
+    const inputPassword = document.getElementById('passwordInput').value;
     
     firebaseAuth.createUserWithEmailAndPassword(inputEmail, inputPassword)
     .then(result => {
@@ -21,15 +21,4 @@ buttonSign.addEventListener('click', () => {
             console.log(err);
         })
 
-});
-
-buttonSignIn.addEventListener('click', () => {
-    const inputEmail = document.getElementById('emailEscola').value;
-    const inputPassword = document.getElementById('passwordEscola').value;
-    firebaseAuth.signWithEmailAndPassword(inputEmail, inputPassword)
-        .then(result => {
-            console.log(result);
-        }).catch(err => {
-            console.log(err);
-        })
 });
