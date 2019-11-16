@@ -48,8 +48,8 @@ h1 { font-size: 2.5em; }
 
 
 /** ========== comments ==========**/
-#comments {
-	background: rgba(255, 167, 4, 0.445);
+.comments {
+	background:url(assets/images/kevin-hendersen-MQ4eKnHtOUg-unsplash.jpg);
 	padding: 30px 0 0 0;
 }
 h3#comments {
@@ -163,7 +163,6 @@ ul.children .comment-body p { width: 544px; }
 	width: 700px;
 }
 #respond form label {
-	color: #333;
 	font-size: 1.2em;
 	line-height: 120%;
 	font-weight: bold;
@@ -240,32 +239,22 @@ ul.children .comment-body p { width: 544px; }
 #commentform p a { font-size: 1em; }
 
 /** ========== Footer ==========**/
-#footer {
+.footer {
 	clear: both;
 	padding-top: 30px;
 	overflow: hidden;
 }
-#footer .container { min-height: 305px; }
-.not-found #footer nav {  margin: 0;}
-#footer nav a {
+.footer .container { min-height: 305px; }
+.not-found .footer nav {  margin: 0;}
+.footer nav a {
 	color: #fff;
 	display: block;
 }
-#footer nav li:first-child a { margin-left: 0; }  a
+.footer nav li:first-child a { margin-left: 0; }  a
 
-
-/** ========== Footer / widget ==========**/
-#footer .widget-title { font-weight: bold; margin-bottom: 25px; }
-#footer .widget_calendar table, #footer .widget_archive, #footer .widget_archive a,
-#footer .widget_links ul, #footer .widget_links ul a { color: #fff; }
-#footer .widget_calendar caption {
-	background: url(assets/images/border.png) repeat-x 0 bottom;
-	padding-bottom: 14px;
-	border: 0;
-}
 
 /** ========== Footer / others ==========**/
-.others, .others .container {
+.others .container {
 	background: #fff;
 	height: 96px;
 	clear: both;
@@ -273,16 +262,21 @@ ul.children .comment-body p { width: 544px; }
 	overflow: hidden;
 
 }
-#footer .others nav {
+.final{
+  position: absolute;
+	top: 25px;
+	right: 0;
+}
+.footer .others  {
 	position: absolute;
 	top: 25px;
 	right: 0;
 }
-#footer .others nav a {
+.footer .others nav a {
 	color: #A2680F;
 	font-size: 1.6em;
 }
-#footer .others .branding {
+.footer .others .branding {
 	position: absolute;
 	top: 17px;
 	left: 0;
@@ -308,7 +302,7 @@ ul.children .comment-body p { width: 544px; }
   
 .geral{
 	/* width: 70%; */
-  min-height: 560px;    
+  min-height: 450px;    
   margin: 0px auto;
 	position: relative;
 	justify-content: center;   
@@ -464,7 +458,7 @@ ul.children .comment-body p { width: 544px; }
 
   .cadastroescola{
     width: 80%;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   /* End Cadastro Escola */
