@@ -26,5 +26,5 @@ function create(nomeDaEscola,nomeDiretor , qtdalunos, email, password, bairro , 
         estado : estado,
         fone : fone
     };
-    return firebaseAuth.database().ref.child('Escolas').push(user);
+    return firebase.database().ref().child('Escolas').push(user);
 }
