@@ -509,10 +509,17 @@ ul.children .comment-body p { width: 544px; }
 .sobre{
   width: 100%;
   margin-top: 40px;
-  background: rgba(192, 192, 192, 0.247);
+  background: rgba(192, 192, 192, 0.192);
   padding: 10px 0 0 0;
   overflow: hidden;
-  height: 500px;
+  height: 633px;
+}
+.sobre1{
+  width: 100%;
+  background:rgba(192, 192, 192, 0.192);
+  padding: 10px 0 0 0;
+  overflow: hidden;
+  height: 633px;
 }
 h4{
   font-size: 35px;
@@ -522,7 +529,13 @@ h4{
   text-align: center;
   padding-bottom: 30px;
 }
-
+.desen{
+  width: 75%;
+  height: 345px;
+  overflow: hidden;
+  background: url(assets/images/aaaaaaaaa.png);
+  text-align-last: center;
+}
 h4:after{
   content: ' ';
   display: block;
@@ -576,6 +589,12 @@ h5{
   font-weight: 800;
   list-style: none;
   font-size: 13px;
+}
+.meio{
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+  background: url(assets/images/subst.svg);
 }
 
 
