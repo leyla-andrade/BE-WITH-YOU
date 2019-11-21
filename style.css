@@ -598,3 +598,34 @@ h5{
 }
 
 
+.titulo-rodape-bewithyou {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: white;
+  padding: 10px;
+  align-items:center;
+  color:black;
+  font-family: sans-serif;
+  
+}
+
+.logo-bewithyou {
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.icons-bewithyou {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: inherit;
+}
