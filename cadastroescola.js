@@ -1,5 +1,4 @@
 const buttonSign = document.querySelector('button[name=sign]');
-const buttonSignIn = document.querySelector('button[name=signin]');
 const firebaseAuth = firebase.auth();
 
 buttonSign.addEventListener('click', () => {

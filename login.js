@@ -1,11 +1,11 @@
-const btnSignIn = document.getElementById('btnsignin');
-const inputEmail = document.getElementById('inputemail');
-const inputPassword = document.getElementById('inputpassword');
+
+const buttonSignIn = document.querySelector('button[name=signin]');
 const firebaseAuth = firebase.auth();
 
-btnSignIn.addEventListener('click', () => {
-    
-    firebaseAuth.signInWithEmailAndPassword(inputEmail.value, inputPassword.value)
+buttonSignIn.addEventListener('click', () => {
+    const inputEmail = document.getElementById('inputemail').value;
+    const inputPassword = document.getElementById('inputpassword').value;
+    firebaseAuth.signInWithEmailAndPassword(inputEmail, inputPassword)
         .then(result => {
             alert('Usuário Conectado!!');
             console.log(result);
