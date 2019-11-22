@@ -115,13 +115,13 @@
 
 									<p>
 										<label for="email">E-mail Da Escola:</label>
-										<input id="email" name="email" required="required" type="email"
+										<input id="inputemail" name="email" required="required" type="email"
 											placeholder="E-mail" />
 									</p>
 
 									<p>
 										<label for="password">Senha:</label>
-										<input id="password" name="password" required="required" type="password"
+										<input id="inputpassword" name="password" required="required" type="password"
 											placeholder="...." />
 									</p>
 
@@ -139,6 +139,9 @@
 										<a href="cadastro_escola.html">Cadastre-se</a>
 									</p>
 								</form>
+
+								<button id="btnsingin">Entrar</button>
+
 							</div>
 						</div>
 					</div>
@@ -226,26 +229,28 @@
 	</div>
 
 	<div class="row">
-		<footer>
-			<div class="logo-rodape-bewithyou">
+		<footer class="footer-body container-fluid align-items-stretch">
+			<ul class="lista-itens row">
+				<li>
+					<i class="fa fa-phone">
+						<img src="assets/images/phone-receiver.png" width="30" height="30">
+					</i>
+					<span>81</span>
+					" 3333.3333 | 4444.4444 "
+				</li>
+				<li>
+					<i class="fa fa-envelope">
+						<img src="assets/images/gmail.png" width="30" height="30">
+					</i>
+					<a style="color: #808080;" href="bewithyoupi@gmail.com">bewithyoupi@gmail.com</a>
+				</li>
+			</ul>
 
-			</div>
-			<div class="titulo-rodape-bewithyou">
-				<h6>Escola Técnica Estadual Porto Digital <br> Desenvolvimento de Sistemas 2019</h6>
-			</div>
-			<div class="icons-bewithyou">
-				<a href="https://www.instagram.com/" title="Instagram" target="_blank"><img src="assets/images/instagram.svg"
-						width="50" height="30" alt="INSTAGRAM"></a>
-				<a href="https://www.facebook.com/" title="Facebook" target="_blank"><img src="assets/images/facebook.svg"
-						width="50" height="30" alt="FACEBOOK"></a>
-				<a href="https://mail.google.com/mail/u/1/#inbox" title="Gmail" target="_blank"><img
-						src="assets/images/gmail.svg" width="50" height="30" alt="GMAIL"></a>
-				<a href="(81)xxxxx xxxx" title="Contato" target="_blank"><img src="assets/images/phone.svg" width="50"
-						height="30" alt="CONTATO"></a>
-			</div>
 		</footer>
 	</div>
-	<script src="cadastroescola.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+	<script src="APP.js"></script>
+	<script src="login.js"></script>
 	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="bootstrap/javascript/jquery.min.js"></script>
 </body>
