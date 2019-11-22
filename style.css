@@ -684,7 +684,7 @@ button[type="button"]:hover {
 }
 
 #cadastro,
-#login {
+#login, #formu {
     position: absolute;
     top: 0px;
     width: 88%;
