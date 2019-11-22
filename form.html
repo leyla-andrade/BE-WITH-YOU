@@ -15,7 +15,7 @@
 
 <body>
     <div id="formAluno">
-        <h2>FORMULÁRIO DE AVALIAÇÃO</h2>
+        <h4>FORMULÁRIO DO ALUNO</h4>
         <form method="post" class="form-group">
             <div>
                 <label for="nome">Nome da escola</label>
@@ -25,8 +25,10 @@
                 <label for="nome">Data do depoimento</label>
                 <input id="data" name="data" required="required" type="date" />
             </div>
-            <p>Você já foi vítima de alguma das situações abaixo?</p>
-            <div>
+            
+            <p> classVocê já foi vítima de alguma das situações abaixo?</p>
+          
+            <div class="checkbox">
                 <input type="checkbox" id="ameacas" name="ameacas">
                 <label for="ameacas">Ameaças</label>
             </div>
@@ -54,7 +56,9 @@
                 <input type="checkbox" id="isolamento" name="isolamento">
                 <label for="isolamento">Isolamento</label>
             </div>
+            
             <p>Você já se sentiu intimidado (a) por algum desses perfis?</p>
+            
             <div>
                 <input type="checkbox" id="professores" name="professores">
                 <label for="professores">Professores</label>
@@ -79,38 +83,46 @@
                 <input type="checkbox" id="adm" name="adm">
                 <label for="adm">Administração</label>
             </div>
+           
             <div>
                 <label for="pergunta01">Você acredita que existe uma sobrecarga de atividades na sua escola?</label>
                 <br>
                 <input id="pergunta" name="pergunta01" required="required" type="text" placeholder="Sua resposta" />
             </div>
+            
             <div>
                 <label for="pergunta02">Você sente falta de suporte psicológico na sua escola?</label> <br>
                 <input id="pergunta" name="pergunta02" required="required" type="text" placeholder="Sua resposta" />
             </div>
+            
             <div>
                 <label for="pergunta03">Você acredita que já apresentou sintomas de doenças como ansiedade, depressão
                     e/ou outras?</label> <br>
                 <input id="pergunta" name="pergunta03" required="required" type="text" placeholder="Sua resposta" />
             </div>
+            
             <div>
                 <label for="pergunta04">Existe um bom relacionamento entre a sua escola e a sua família?</label> <br>
                 <input id="pergunta" name="pergunta04" required="required" type="text" placeholder="Sua resposta" />
             </div>
+            
             <div>
                 <label for="pergunta05">Como você enxerga o ambiente escolar no qual você está inserido?</label> <br>
                 <input id="pergunta" name="pergunta05" required="required" type="text" placeholder="Sua resposta" />
             </div>
+            
             <div>
                 <label for="pergunta06">Você utiliza a escola como uma válvula de escape para problemas em casa?</label>
                 <br>
                 <input id="pergunta" name="pergunta06" required="required" type="text" placeholder="Sua resposta" />
             </div>
+            
             <div>
                 <label for="pergunta07">Como você encontra suporte emocional atualmente?</label> <br>
                 <input id="pergunta" name="pergunta07" required="required" type="text" placeholder="Sua resposta" />
             </div>
-            <button type="submit" name="enviar" formmethod="post">Enviar</button>
+            
+            <button  type="submit" class="btn btn-primary buttonSubmit" name="enviar" formmethod="post">Enviar</button>
         </form>
     </div>
 </body>
