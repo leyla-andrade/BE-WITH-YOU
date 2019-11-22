@@ -292,6 +292,7 @@ ul.children .comment-body p { width: 544px; }
   label{
     color: #cac24d;
     position: relative;
+
   }
  
   /* placeholder */
@@ -628,4 +629,9 @@ footer {
 h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-style: inherit;
+}
+.buttonSubmit {
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
