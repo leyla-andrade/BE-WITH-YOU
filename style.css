@@ -708,9 +708,14 @@ button[type="button"]:hover {
     margin-top: 20px;
 }
 
-.cadastroescola {
+.cadastroescola{
     width: 80%;
     margin-top: 40px;
+}
+
+.formu{
+    width: 90%;
+    margin-top: 50px;
 }
 
 

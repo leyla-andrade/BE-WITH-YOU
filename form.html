@@ -15,9 +15,9 @@
 
 <body>
 
-    <div class="formAluno container reverse">
-       
-        <div class="geral">
+    <div class="formAluno ">
+
+        <div class="geral container reverse">
             <div class="bg-form">
                 <div id="formu">
                     <form method="post" class="form-group">
@@ -27,68 +27,69 @@
 
                         <div class="quest">
                             <label for="nome">Nome da escola</label>
-                            <input id="nome" name="nome" required="required" type="text" placeholder="Nome da escola" />
+                            <input id="nomeinput" name="nome" required="required" type="text"
+                                placeholder="Nome da escola" />
                         </div>
                         <div class="quest">
                             <label for="nome">Data do depoimento</label>
-                            <input id="data" name="data" required="required" type="date" />
+                            <input id="datainput" name="data" required="required" type="date" />
                         </div>
 
                         <p>Você já foi vítima de alguma das situações abaixo?</p>
 
                         <div class="quest">
-                            <input type="checkbox" id="ameacas" name="ameacas">
+                            <input type="checkbox" id="ameacasinput" name="ameacas">
                             <label for="ameacas">Ameaças</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="assedioMoral" name="assedioMoral">
+                            <input type="checkbox" id="assediomoralinput" name="assedioMoral">
                             <label for="assedioMoral">Assédio Moral</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="assedioSexual" name="assedioSexual">
+                            <input type="checkbox" id="assediosexualinput" name="assedioSexual">
                             <label for="assedioSexual">Assédio Sexual</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="boatos" name="boatos">
+                            <input type="checkbox" id="boatosinput" name="boatos">
                             <label for="boatos">Boatos</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="brigas" name="brigas">
+                            <input type="checkbox" id="brigasinput" name="brigas">
                             <label for="brigas">Brigas</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="bullying" name="bullying">
+                            <input type="checkbox" id="bullyinginput" name="bullying">
                             <label for="bullying">Bullying</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="isolamento" name="isolamento">
+                            <input type="checkbox" id="isolamentoinput" name="isolamento">
                             <label for="isolamento">Isolamento</label>
                         </div>
 
                         <p>Você já se sentiu intimidado (a) por algum desses perfis?</p>
 
                         <div class="quest">
-                            <input type="checkbox" id="professores" name="professores">
+                            <input type="checkbox" id="professoresinput" name="professores">
                             <label for="professores">Professores</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="cozinheiros" name="cozinheiros">
+                            <input type="checkbox" id="cozinheirosinput" name="cozinheiros">
                             <label for="cozinheiros">Cozinheiros</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="segurancas" name="segurancas">
+                            <input type="checkbox" id="segurancasinput" name="segurancas">
                             <label for="segurancas">Seguranças</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="gestor" name="gestor">
+                            <input type="checkbox" id="gestorinput" name="gestor">
                             <label for="gestor">Gestor</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="alunos" name="alunos">
+                            <input type="checkbox" id="alunosinput" name="alunos">
                             <label for="aluno">Outros alunos</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="adm" name="adm">
+                            <input type="checkbox" id="adminput" name="adm">
                             <label for="adm">Administração</label>
                         </div>
 
@@ -96,13 +97,13 @@
                             <label for="pergunta01">Você acredita que existe uma sobrecarga de atividades na sua
                                 escola?</label>
                             <br>
-                            <input id="pergunta" name="pergunta01" required="required" type="text"
+                            <input id="perguntainput" name="pergunta01" required="required" type="text"
                                 placeholder="Sua resposta" />
                         </div>
 
                         <div class="quest">
                             <label for="pergunta02">Você sente falta de suporte psicológico na sua escola?</label> <br>
-                            <input id="pergunta" name="pergunta02" required="required" type="text"
+                            <input id="perguntadinput" name="pergunta02" required="required" type="text"
                                 placeholder="Sua resposta" />
                         </div>
 
@@ -110,7 +111,7 @@
                             <label for="pergunta03">Você acredita que já apresentou sintomas de doenças como ansiedade,
                                 depressão
                                 e/ou outras?</label> <br>
-                            <input id="pergunta" name="pergunta03" required="required" type="text"
+                            <input id="perguntatinput" name="pergunta03" required="required" type="text"
                                 placeholder="Sua resposta" />
                         </div>
 
@@ -118,7 +119,7 @@
                             <label for="pergunta04">Existe um bom relacionamento entre a sua escola e a sua
                                 família?</label>
                             <br>
-                            <input id="pergunta" name="pergunta04" required="required" type="text"
+                            <input id="perguntaqinput" name="pergunta04" required="required" type="text"
                                 placeholder="Sua resposta" />
                         </div>
 
@@ -126,7 +127,7 @@
                             <label for="pergunta05">Como você enxerga o ambiente escolar no qual você está
                                 inserido?</label>
                             <br>
-                            <input id="pergunta" name="pergunta05" required="required" type="text"
+                            <input id="perguntacinput" name="pergunta05" required="required" type="text"
                                 placeholder="Sua resposta" />
                         </div>
 
@@ -134,17 +135,17 @@
                             <label for="pergunta06">Você utiliza a escola como uma válvula de escape para problemas em
                                 casa?</label>
                             <br>
-                            <input id="pergunta" name="pergunta06" required="required" type="text"
+                            <input id="perguntasinput" name="pergunta06" required="required" type="text"
                                 placeholder="Sua resposta" />
                         </div>
 
                         <div class="quest">
                             <label for="pergunta07">Como você encontra suporte emocional atualmente?</label> <br>
-                            <input id="pergunta" name="pergunta07" required="required" type="text"
+                            <input id="perguntaseinput" name="pergunta07" required="required" type="text"
                                 placeholder="Sua resposta" />
                         </div>
 
-                        <button type="button" name="button" formmethod="post">Enviar</button>
+                        <button type="button" name="button" id="adcButton">Enviar</button>
                     </form>
                 </div>
 
@@ -154,5 +155,10 @@
     </div>
 
 </body>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script> -->
+<script src="APP.js"></script>
+<script src="dataformu.js"></script>
 
 </html>
