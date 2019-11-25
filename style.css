@@ -874,7 +874,7 @@ h5 {
 
 .footer-body {
     margin-top: 0;
-    padding: 20px;
+    padding: 24px;
     background: #ffffff;
     display: block;
 }
@@ -921,28 +921,16 @@ h5 {
     background: url(assets/images/subst.svg);
 }
 
-.titulo-rodape-bewithyou {
+.titulo-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
-footer {
+/* footer {
     background-color: white;
     padding: 10px;
     align-items: center;
     color: black;
     font-family: sans-serif;
-}
-
-.logo-bewithyou {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.icons-bewithyou {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
+} */
