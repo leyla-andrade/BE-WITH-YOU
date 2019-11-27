@@ -7,7 +7,7 @@ buttonSign.addEventListener('click', () => {
 
     firebaseAuth.createUserWithEmailAndPassword(inputEmail, inputPassword)
         .then(result => {
-            alert('Conta feita com sucesso!! Faça seu login e confira nossas ferramentas');
+            alert('Conta feita com sucesso!! Faça seu login e confira nossas ferramentas. O Mapeamento será enviado por e-mail, aguardamos do dia do cadastro da escola até fazer um mês, e assim, mandaremos o mapeamento. Qualquer dúvida, mande um e-mail ou ligue para o Be With You!');
             console.log(result);
             const user = result.user;
             user.sendEmailVerification().then(result => {
