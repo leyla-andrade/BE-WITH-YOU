@@ -46,11 +46,15 @@
 						<a class="nav-link" href="conexaolog.html">Conexão</a>
 					</li>
 				</ul>
+				<a href="index.html" class="sair" role="button" aria-pressed="true">Sair</a>
+				<div class="btn- sair">
+					<button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+					<button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+				</div>
 			</div>
-			<a href="index.html" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Sair</a>
 		</div>
-
 	</nav>
+
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -61,39 +65,26 @@
 			<!-- Slide One - Set the background image for this slide in the line below -->
 			<div class="carousel-item active">
 				<img class="d-block w-100" src="assets/images/imagemdacampanha1_telainicial.jpg">
-				<div class="carousel-caption d-none d-md-block">
-					<h1>Entenda mais</h1>
-				</div>
 			</div>
 			<!-- Slide Two - Set the background image for this slide in the line below -->
 			<div class="carousel-item">
 				<img class="d-block w-100" src="assets/images/downloadescola.jpg">
-				<div class="carousel-caption d-none d-md-block">
-					<h1>Centro de Valorização a vida</h1>
-					<p>O CVV realiza apoio emocional e prevenção do suicídio, atendendo de forma voluntária todas as
-						pessoas que querem conversar.</p>
-				</div>
 			</div>
 			<!-- Slide Three - Set the background image for this slide in the line below -->
 			<div class="carousel-item">
 				<img class="d-block w-100" src="assets/images/downloadtresescxola.jpg">
-				<div class="carousel-caption d-none d-md-block">
-					<h1>Cadastrar</h1>
-				</div>
 			</div>
 		</div>
-		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Anterior</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Próximo</span>
-		</a>
 	</div>
-
-
-
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Anterior</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Próximo</span>
+	</a>
+	</div>
 	<div class="meio">
 		<!-- meioo -->
 	</div>
@@ -180,14 +171,14 @@
 		<footer class="footer-body container-fluid align-items-stretch">
 			<ul class="lista-itens row">
 				<li>
-					<i >
+					<i>
 						<img src="assets/images/phone-receiver.png" width="30" height="30">
 					</i>
 					<span>81</span>
 					" 3333.3333 | 4444.4444 "
 				</li>
 				<li>
-					<i >
+					<i>
 						<img src="assets/images/gmail.png" width="30" height="30">
 					</i>
 					<a style="color: #808080;" href="bewithyoupi@gmail.com">bewithyoupi@gmail.com</a>
@@ -196,6 +187,29 @@
 
 		</footer>
 	</div>
+	<script type="text/javascript">
+		window.onload = function () {
+			var elementBody = document.querySelector('body');
+			var elementBtnIncreaseFont = document.getElementById('increase-font');
+			var elementBtnDecreaseFont = document.getElementById('decrease-font');
+			// Padrão de tamanho, equivale a 100% do valor definido no Body
+			var fontSize = 100;
+			// Valor de incremento ou decremento, equivale a 10% do valor do Body
+			var increaseDecrease = 10;
+
+			// Evento de click para aumentar a fonte
+			elementBtnIncreaseFont.addEventListener('click', function (event) {
+				fontSize = fontSize + increaseDecrease;
+				elementBody.style.fontSize = fontSize + '%';
+			});
+
+			// Evento de click para diminuir a fonte
+			elementBtnDecreaseFont.addEventListener('click', function (event) {
+				fontSize = fontSize - increaseDecrease;
+				elementBody.style.fontSize = fontSize + '%';
+			});
+		}
+	</script>
 	<script src="cadastroescola.js"></script>
 	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="bootstrap/javascript/jquery.min.js"></script>
