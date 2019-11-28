@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body background="assets/images/escola3.jpg">
 
 	<section id="wrapper-content">
 		<div class="row">
@@ -30,7 +30,10 @@
 						<div id="cadastro">
 							<form method="post" action="">
 								<h2>Cadastro</h2>
-
+								<div class="btn-container aluno">
+									<button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+									<button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+								</div>
 								<p>
 									<label for="nomeescola">Nome Da Escola:</label>
 									<span class="required">*</span>
@@ -62,7 +65,7 @@
 									<label for="password">Senha:</label>
 									<span class="required">*</span>
 									<input id="passwordInput" name="password" required="required" type="password"
-										placeholder="mínimo 6 dígitos"/>
+										placeholder="mínimo 6 dígitos" />
 								</p>
 
 								<p>
@@ -123,7 +126,7 @@
 								</p>
 
 								<p>
-									<button  type="button" name="sign" id="addButton">Cadastrar</button>
+									<button type="button" name="sign" id="addButton">Cadastrar</button>
 								</p>
 
 								<p class="link">
@@ -145,6 +148,29 @@
 			</div>
 		</div>
 	</section>
+	<script type="text/javascript">
+		window.onload = function () {
+			var elementBody = document.querySelector('body');
+			var elementBtnIncreaseFont = document.getElementById('increase-font');
+			var elementBtnDecreaseFont = document.getElementById('decrease-font');
+			// Padrão de tamanho, equivale a 100% do valor definido no Body
+			var fontSize = 100;
+			// Valor de incremento ou decremento, equivale a 10% do valor do Body
+			var increaseDecrease = 10;
+
+			// Evento de click para aumentar a fonte
+			elementBtnIncreaseFont.addEventListener('click', function (event) {
+				fontSize = fontSize + increaseDecrease;
+				elementBody.style.fontSize = fontSize + '%';
+			});
+
+			// Evento de click para diminuir a fonte
+			elementBtnDecreaseFont.addEventListener('click', function (event) {
+				fontSize = fontSize - increaseDecrease;
+				elementBody.style.fontSize = fontSize + '%';
+			});
+		}
+	</script>
 </body>
 
 </html>

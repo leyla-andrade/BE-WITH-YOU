@@ -20,12 +20,13 @@
         <div class="geral container reverse">
             <div class="bg-form">
                 <div id="formu">
+                    <div class="btn- sair">
+                        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+                        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+                    </div>
                     <form method="post" class="form-group">
-                        <h4>FORMULÁRIO DO ALUNO<a href="index.html" class="sair" role="button" aria-pressed="true">Voltar</a>
-                            <div class="btn- sair">
-                                <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
-                                <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
-                            </div>
+                        <h4>FORMULÁRIO DO ALUNO<a href="index.html" class="sair" role="button"
+                                aria-pressed="true">Voltar</a>
                         </h4>
 
                         <div class="quest">
@@ -49,7 +50,8 @@
                             <label for="assedioMoral">Assédio Moral</label>
                         </div>
                         <div class="quest">
-                            <input type="checkbox" id="assediosexualcheckbox" name="assediosexual" value="assediosexual">
+                            <input type="checkbox" id="assediosexualcheckbox" name="assediosexual"
+                                value="assediosexual">
                             <label for="assedioSexual">Assédio Sexual</label>
                         </div>
                         <div class="quest">
@@ -147,10 +149,12 @@
                             <input id="perguntaseinput" name="pergunta07" required="required" type="text"
                                 placeholder="Sua resposta" />
                         </div>
-                       <p>
-                        <button  type="button" name="button" id="adcButton">Enviar</button>  
-                       </p>
-                        
+                        <p>
+                            <button type="button" name="button" id="adcButton">Enviar</button>
+
+                        </p>
+
+
                     </form>
                 </div>
 
@@ -158,6 +162,29 @@
         </div>
 
     </div>
+    <script type="text/javascript">
+        window.onload = function () {
+            var elementBody = document.querySelector('body');
+            var elementBtnIncreaseFont = document.getElementById('increase-font');
+            var elementBtnDecreaseFont = document.getElementById('decrease-font');
+            // Padrão de tamanho, equivale a 100% do valor definido no Body
+            var fontSize = 100;
+            // Valor de incremento ou decremento, equivale a 10% do valor do Body
+            var increaseDecrease = 10;
+
+            // Evento de click para aumentar a fonte
+            elementBtnIncreaseFont.addEventListener('click', function (event) {
+                fontSize = fontSize + increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+
+            // Evento de click para diminuir a fonte
+            elementBtnDecreaseFont.addEventListener('click', function (event) {
+                fontSize = fontSize - increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+        }
+    </script>
 
 </body>
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>

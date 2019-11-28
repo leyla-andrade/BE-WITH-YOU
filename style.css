@@ -455,7 +455,6 @@ button[name="button"]{
     width: 100%!important;
 }
 .sair, .aluno {
-    
     cursor: pointer;
     background: rgb(226, 194, 88);
     padding: 8px 5px;
