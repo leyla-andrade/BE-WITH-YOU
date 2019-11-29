@@ -71,7 +71,7 @@ h1 {
     padding: 30px 0 0 0;
 }
 
-h3#comments {
+h3.comments {
     color: #444444;
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -225,7 +225,7 @@ ul.children .comment-body p {
     display: none;
 }
 
-#respond {
+.respond {
     clear: both;
     border-top: 2px dotted #BBBBBB;
     padding: 20px 20px 0 20px;
@@ -233,7 +233,7 @@ ul.children .comment-body p {
     width: 700px;
 }
 
-#respond form label {
+.respond form label {
     font-size: 1.2em;
     line-height: 120%;
     font-weight: bold;
@@ -241,26 +241,26 @@ ul.children .comment-body p {
     margin: 0 0 10px 0;
 }
 
-#respond h1 {
+.respond h1 {
     font-size: 2.5em;
     color: #FFA517;
     margin-bottom: 15px;
 }
 
-#respond h1 a {
+.respond h1 a {
     color: #333;
     font-size: 0.7em;
     margin-left: 15px;
 }
 
-#respond form .comment-notes {
+.respond form .comment-notes {
     float: none;
     color: #999999;
     font-size: 1.4em;
     font-style: italic;
 }
 
-#respond form p {
+.respond form p {
     margin: 0 0 20px 0;
     padding: 2px 0 2px 2px;
     float: left;
@@ -268,9 +268,9 @@ ul.children .comment-body p {
     position: relative;
 }
 
-#respond form input[type="text"],
-#respond form input[type="email"],
-#respond form textarea {
+.respond form input[type="text"],
+.respond form input[type="email"],
+.respond form textarea {
     margin: 0 15px 0 0;
     border: 1px solid #CCCCCC;
     background: #fff;
@@ -280,7 +280,7 @@ ul.children .comment-body p {
     width: 180px;
 }
 
-#respond form textarea {
+.respond form textarea {
     min-width: 646px;
     max-width: 646px;
     min-height: 70px;
@@ -288,7 +288,7 @@ ul.children .comment-body p {
     overflow: auto;
 }
 
-#respond form input[type="submit"] {
+.respond form input[type="submit"] {
     background: #FFA517;
     padding: 10px;
     overflow: visible;
@@ -298,7 +298,7 @@ ul.children .comment-body p {
     cursor: pointer;
 }
 
-#respond .required {
+.respond .required {
     position: absolute;
     top: 47px;
     right: 28px;
@@ -317,13 +317,13 @@ ul.children .comment-body p {
     clear: both;
 }
 
-#commentform p,
-#commentform p a {
+.commentform p,
+.commentform p a {
     color: #333;
     font-size: 1.4em;
 }
 
-#commentform p a {
+.commentform p a {
     font-size: 1em;
 }
 
@@ -392,6 +392,7 @@ p {
 label {
     color: #cac24d;
     position: relative;
+    line-height: 1.2;
 }
 
 
@@ -667,6 +668,7 @@ button[type="button"]:hover {
     padding: 10px 0 0 0;
     overflow: hidden;
     height: 633px;
+   
 }
 
 .sobre1 {
@@ -675,6 +677,7 @@ button[type="button"]:hover {
     padding: 10px 0 0 0;
     overflow: hidden;
     height: 633px;
+  
 }
 
 h4 {
@@ -690,7 +693,6 @@ h4 {
     width: 75%;
     height: 345px;
     overflow: hidden;
-    background: url(assets/images/aaaaaaaaa.png);
    
 }
 
@@ -716,7 +718,7 @@ h5 {
 .footer-body {
     margin-top: 0;
     padding: 24px;
-    background: #ffffff;
+    background:#7676775e;
     display: block;
 }
 
@@ -749,7 +751,7 @@ h5 {
 .footer-body .lista-itens li {
     margin-right: 40px;
     margin-top: 15px;
-    color: #6d6e71;
+    color: #767677;
     font-weight: 800;
     list-style: none;
     font-size: 13px;
@@ -769,6 +771,28 @@ h5 {
 }
 .d-block{
   width: 100%;
+}
+.portfolio-item{
+    padding-top: 175px;
+    padding-bottom: 82px;
+}
+.conexao{
+    padding-top: 140px;
+}
+.conexaolog{
+    padding-top: 10px;
+    padding-bottom: 82px;  
+}
+.card-text{
+    line-height: 1.2;
+}
+#giselefooter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+
+
 }
 
 /* footer {

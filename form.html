@@ -13,142 +13,94 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body background="assets/images/kevin-hendersen-MQ4eKnHtOUg-unsplash.jpg">
 
     <div class="formAluno ">
 
         <div class="geral container reverse">
             <div class="bg-form">
                 <div id="formu">
-                    <div class="btn- sair">
-                        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
-                        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
-                    </div>
-                    <form method="post" class="form-group">
-                        <h4>FORMULÁRIO DO ALUNO<a href="index.html" class="sair" role="button"
-                                aria-pressed="true">Voltar</a>
-                        </h4>
 
-                        <div class="quest">
+                    <form method="post" action="">
+                        <h4>FORMULÁRIO DO ALUNO </h4>
+                        <a href="index.html" class="sair" role="button" aria-pressed="true">Voltar</a>
+                        <p>
+                            <div class="btn- sair">
+                                <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+                                <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+                            </div>
+                        </p>
+                        <p>
                             <label for="nome">Nome da escola</label>
                             <input id="nomeinput" name="nome" required="required" type="text"
                                 placeholder="Nome da escola" />
-                        </div>
-                        <div class="quest">
+                        </p>
+                        <p>
                             <label for="nome">Data do depoimento</label>
                             <input id="datainput" name="data" required="required" type="date" />
-                        </div>
+                        </p>
 
-                        <p>Você já foi vítima de alguma das situações abaixo?</p>
+                        <p> <label for="text">Você já foi vítima de algumas dessas situações exempladas? Se sim, qual ou quais? ex.: ameaças, assédio sessual, assédio moral, 
+                            boatos, brigas, bullying e isolamentos.</label>
+                            <input type="text" id="textinput" name="text" required="required" placeholder="Sua resposta">
+                        </p>
 
-                        <div class="quest">
-                            <input type="checkbox" id="ameacascheckbox" name="ameacas" value="ameacas">
-                            <label for="ameacas">Ameaças</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="assediomoralcheckbox" name="assedioMoral" value="assedioMoral">
-                            <label for="assedioMoral">Assédio Moral</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="assediosexualcheckbox" name="assediosexual"
-                                value="assediosexual">
-                            <label for="assedioSexual">Assédio Sexual</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="boatoscheckbox" name="boatos" value="boatos">
-                            <label for="boatos">Boatos</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="brigascheckbox" name="brigas" value="brigas">
-                            <label for="brigas">Brigas</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="bullyingcheckbox" name="bullying" value="bullying">
-                            <label for="bullying">Bullying</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="isolamentocheckbox" name="isolamento" value="isolamento">
-                            <label for="isolamento">Isolamento</label>
-                        </div>
+                        <p><label for="exemplos">Você já se sentiu intimidado (a) por algum desses exemplos de perfis? Se sim, qual ou quais? ex.: professores, cozinheiros, 
+                            seguranças, gestor, aluno e administração.</label>
+                            <input type="text" id="exemplosinput" name="exemplos" placeholder="Sua resposta">
+                        </p>
 
-                        <p>Você já se sentiu intimidado (a) por algum desses perfis?</p>
-
-                        <div class="quest">
-                            <input type="checkbox" id="professorescheckbox" name="professores" value="professores">
-                            <label for="professores">Professores</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="cozinheiroscheckbox" name="cozinheiros" value="cozinheiros">
-                            <label for="cozinheiros">Cozinheiros</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="segurancascheckbox" name="segurancas" value="segunrancas">
-                            <label for="segurancas">Seguranças</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="gestorcheckbox" name="gestor" value="gestor">
-                            <label for="gestor">Gestor</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="alunoscheckbox" name="alunos" value="alunos">
-                            <label for="aluno">Outros alunos</label>
-                        </div>
-                        <div class="quest">
-                            <input type="checkbox" id="admcheckbox" name="adm" value="adm">
-                            <label for="adm">Administração</label>
-                        </div>
-
-                        <div class="quest">
+                        <p>
                             <label for="pergunta01">Você acredita que existe uma sobrecarga de atividades na sua
                                 escola?</label>
                             <br>
                             <input id="perguntainput" name="pergunta01" required="required" type="text"
                                 placeholder="Sua resposta" />
-                        </div>
+                        </p>
 
-                        <div class="quest">
+                        <p>
                             <label for="pergunta02">Você sente falta de suporte psicológico na sua escola?</label> <br>
                             <input id="perguntadinput" name="pergunta02" required="required" type="text"
                                 placeholder="Sua resposta" />
-                        </div>
+                        </p>
 
-                        <div class="quest">
+                        <p>
                             <label for="pergunta03">Você acredita que já apresentou sintomas de doenças como ansiedade,
                                 depressão
                                 e/ou outras?</label> <br>
                             <input id="perguntatinput" name="pergunta03" required="required" type="text"
                                 placeholder="Sua resposta" />
-                        </div>
+                        </p>
 
-                        <div class="quest">
+                        <p>
                             <label for="pergunta04">Existe um bom relacionamento entre a sua escola e a sua
                                 família?</label>
                             <br>
                             <input id="perguntaqinput" name="pergunta04" required="required" type="text"
                                 placeholder="Sua resposta" />
-                        </div>
+                        </p>
 
-                        <div class="quest">
+                        <p>
                             <label for="pergunta05">Como você enxerga o ambiente escolar no qual você está
                                 inserido?</label>
                             <br>
                             <input id="perguntacinput" name="pergunta05" required="required" type="text"
                                 placeholder="Sua resposta" />
-                        </div>
+                        </p>
 
-                        <div class="quest">
+                        <p>
                             <label for="pergunta06">Você utiliza a escola como uma válvula de escape para problemas em
                                 casa?</label>
                             <br>
                             <input id="perguntasinput" name="pergunta06" required="required" type="text"
                                 placeholder="Sua resposta" />
-                        </div>
+                        </p>
 
-                        <div class="quest">
+                        <p>
                             <label for="pergunta07">Como você encontra suporte emocional atualmente?</label> <br>
                             <input id="perguntaseinput" name="pergunta07" required="required" type="text"
                                 placeholder="Sua resposta" />
-                        </div>
+                        </p>
                         <p>
                             <button type="button" name="button" id="adcButton">Enviar</button>
 
@@ -191,6 +143,6 @@
 <!-- <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script> -->
 <script src="APP.js"></script>
-<script src="dataformu.js"></script>
+<script src="realtime-database.js"></script>
 
 </html>
