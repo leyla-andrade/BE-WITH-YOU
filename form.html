@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>BE WITH YOU</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--[if lte IE 8]><script type="text/javascript" src="assets/javascript/html5.js"></script><![endif]-->
@@ -25,85 +24,88 @@
                         <h4>FORMULÁRIO DO ALUNO </h4>
                         <a href="index.html" class="sair" role="button" aria-pressed="true">Voltar</a>
                         <p>
-                            <div class="btn- sair">
-                                <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
-                                <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
-                            </div>
                         </p>
+                        <div class="btn- sair">
+                            <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+                            <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+                        </div>
+                        <p></p>
                         <p>
                             <label for="nome">Nome da escola</label>
-                            <input id="nomeinput" name="nome" required="required" type="text"
-                                placeholder="Nome da escola" />
+                            <input id="nomeEscola" name="nome" required="required" type="text"
+                                placeholder="Nome da escola">
                         </p>
                         <p>
                             <label for="nome">Data do depoimento</label>
-                            <input id="datainput" name="data" required="required" type="date" />
+                            <input id="dataDepoimento" name="data" required="required" type="date">
                         </p>
 
-                        <p> <label for="text">Você já foi vítima de algumas dessas situações exempladas? Se sim, qual ou quais? ex.: ameaças, assédio sessual, assédio moral, 
-                            boatos, brigas, bullying e isolamentos.</label>
-                            <input type="text" id="textinput" name="text" required="required" placeholder="Sua resposta">
+                        <p> <label for="text">Você já foi vítima de algumas dessas situações exempladas? Se sim, qual ou
+                                quais? ex.: ameaças, assédio sessual, assédio moral,
+                                boatos, brigas, bullying e isolamentos.</label>
+                            <input type="text" id="textDepoimento" name="text" required="required"
+                                placeholder="Sua resposta">
                         </p>
 
-                        <p><label for="exemplos">Você já se sentiu intimidado (a) por algum desses exemplos de perfis? Se sim, qual ou quais? ex.: professores, cozinheiros, 
-                            seguranças, gestor, aluno e administração.</label>
-                            <input type="text" id="exemplosinput" name="exemplos" placeholder="Sua resposta">
+                        <p><label for="exemplos">Você já se sentiu intimidado (a) por algum desses exemplos de perfis?
+                                Se sim, qual ou quais? ex.: professores, cozinheiros,
+                                seguranças, gestor, aluno e administração.</label>
+                            <input type="text" id="exemplosInput" name="exemplos" placeholder="Sua resposta">
                         </p>
 
                         <p>
                             <label for="pergunta01">Você acredita que existe uma sobrecarga de atividades na sua
                                 escola?</label>
                             <br>
-                            <input id="perguntainput" name="pergunta01" required="required" type="text"
-                                placeholder="Sua resposta" />
+                            <input id="perguntaInput" name="pergunta01" required="required" type="text"
+                                placeholder="Sua resposta">
                         </p>
 
                         <p>
                             <label for="pergunta02">Você sente falta de suporte psicológico na sua escola?</label> <br>
-                            <input id="perguntadinput" name="pergunta02" required="required" type="text"
-                                placeholder="Sua resposta" />
+                            <input id="perguntadInput" name="pergunta02" required="required" type="text"
+                                placeholder="Sua resposta">
                         </p>
 
                         <p>
                             <label for="pergunta03">Você acredita que já apresentou sintomas de doenças como ansiedade,
                                 depressão
                                 e/ou outras?</label> <br>
-                            <input id="perguntatinput" name="pergunta03" required="required" type="text"
-                                placeholder="Sua resposta" />
+                            <input id="perguntatInput" name="pergunta03" required="required" type="text"
+                                placeholder="Sua resposta">
                         </p>
 
                         <p>
                             <label for="pergunta04">Existe um bom relacionamento entre a sua escola e a sua
                                 família?</label>
                             <br>
-                            <input id="perguntaqinput" name="pergunta04" required="required" type="text"
-                                placeholder="Sua resposta" />
+                            <input id="perguntaqInput" name="pergunta04" required="required" type="text"
+                                placeholder="Sua resposta">
                         </p>
 
                         <p>
                             <label for="pergunta05">Como você enxerga o ambiente escolar no qual você está
                                 inserido?</label>
                             <br>
-                            <input id="perguntacinput" name="pergunta05" required="required" type="text"
-                                placeholder="Sua resposta" />
+                            <input id="perguntacInput" name="pergunta05" required="required" type="text"
+                                placeholder="Sua resposta">
                         </p>
 
                         <p>
                             <label for="pergunta06">Você utiliza a escola como uma válvula de escape para problemas em
                                 casa?</label>
                             <br>
-                            <input id="perguntasinput" name="pergunta06" required="required" type="text"
-                                placeholder="Sua resposta" />
+                            <input id="perguntasInput" name="pergunta06" required="required" type="text"
+                                placeholder="Sua resposta">
                         </p>
 
                         <p>
                             <label for="pergunta07">Como você encontra suporte emocional atualmente?</label> <br>
-                            <input id="perguntaseinput" name="pergunta07" required="required" type="text"
-                                placeholder="Sua resposta" />
+                            <input id="perguntaseInput" name="pergunta07" required="required" type="text"
+                                placeholder="Sua resposta">
                         </p>
                         <p>
                             <button type="button" name="button" id="adcButton">Enviar</button>
-
                         </p>
 
 
@@ -138,11 +140,13 @@
         }
     </script>
 
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script> -->
+    <script src="APP.js"></script>
+    <script src="realtime-database.js"></script>
+
+
 </body>
-<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script> -->
-<script src="APP.js"></script>
-<script src="realtime-database.js"></script>
 
 </html>
