@@ -215,7 +215,7 @@
                     <p class="comment-form-author">
                         <label for="author">Nome completo</label>
                         <span class="required">*</span>
-                        <input id="author" name="author" type="text" placeholder="Lorem ipsum" size="30"
+                        <input id="nomeCompleto" name="nomeCompleto" type="text" placeholder="Lorem ipsum" size="30"
                             aria-required="true">
                     </p>
                     <p class="comment-form-email">
@@ -231,12 +231,10 @@
                     </p>
                     <p class="comment-form-comment">
                         <label for="comment">Sua mensagem</label>
-                        <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+                        <textarea id="comment" name="comment"></textarea>
                     </p>
-                    <p class="form-submit">
-                        <input name="submit" type="submit" id="submit" value="Postar Mensagem">
-                        <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
-                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                    <p>
+                        <button type="button" name="button" id="adButton">Enviar</button>
                     </p>
                 </form>
             </div>
@@ -247,17 +245,12 @@
     <div class="row">
         <footer class="footer-body container-fluid align-items-center">
             <div class="titulo-footer container reverse">
-                <p id="#giselefooter"> <strong> Escola Técnica Estadual Porto Digital </strong> <br> <br>
-                    Desenvolvimento de Sistemas 2019</p>
+                <p> <strong> Escola Técnica Estadual Porto Digital </strong> <br><br>
+                    Desenvolvimento de Sistemas 2019<br> <br>
+                    <img src="assets/images/gmail.png" width="20" height="20"><a class="linha"
+                        style="color: #808080;">bewithyoupi@gmail.com</a>
+                </p>
             </div>
-            <ul class="lista-itens">
-                <li>
-                    <i>
-                        <img src="assets/images/gmail.png" width="20" height="20">
-                    </i>
-                    <a style="color: #808080;">bewithyoupi@gmail.com</a>
-                </li>
-            </ul>
         </footer>
     </div>
 </body>
@@ -267,6 +260,7 @@
 <script src="login.js"></script>
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="bootstrap/javascript/jquery.min.js"></script>
+<script src="faleconosco.js"></script>
 </body>
 
 </html>
