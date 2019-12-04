@@ -88,15 +88,15 @@
 
 	</header>
 
-	<div class="meio" width="1900px" height="1080">
+	<div class="meio">
 		<!-- meioo -->
 	</div>
 
 	<section id="wrapper-content">
-		<div class="sobre">
+		<div class="sobre1">
 			<div class="container reverse">
 				<div>
-					<h4>O QUE SOMOS?</h4>
+					<h4>QUEM SOMOS?</h4>
 
 					<div class="text-center">
 						<h5>Estudantes da turma de 2019 da Escola Técnica Estadual Porto Digital,
@@ -124,44 +124,42 @@
 	</section>
 
 	<div class="comments">
-		<div class="container">
-			<div class="respond">
-				<h1 class="reply-title">Fale conosco!</h1>
-				<form action="http://localhost/wp-teste/wp-comments-post.php" method="post" id="commentform">
-					<p class="comment-notes">Seu endereço de e-mail não será publicado.
-						<span class="required">*</span>
-					</p>
+        <div class="container">
+            <div class="respond">
+                <h1 class="reply-title">Fale conosco!</h1>
+                <form action="http://localhost/wp-teste/wp-comments-post.php" method="post" id="commentform">
+                    <p class="comment-notes">Seu endereço de e-mail não será publicado.
+                        <span class="required">*</span>
+                    </p>
 
-					<p class="comment-form-author">
-						<label for="author">Nome completo</label>
-						<span class="required">*</span>
-						<input id="author" name="author" type="text" placeholder="Lorem ipsum" size="30"
-							aria-required="true">
-					</p>
-					<p class="comment-form-email">
-						<label for="email">E-mail</label>
-						<span class="required">*</span>
-						<input id="email" name="email" type="text" placeholder="leyla23@gmail.com" size="30"
-							aria-required="true">
-					</p>
-					<p class="comment-form-url">
-						<label for="url">Música preferida</label>
-						<input id="url" name="url" type="text" placeholder="http://www.youtube.com/watch?v=pa14VNsdSYM"
-							size="30">
-					</p>
-					<p class="comment-form-comment">
-						<label for="comment">Sua mensagem</label>
-						<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
-					</p>
-					<p class="form-submit">
-						<input name="submit" type="submit" id="submit" value="Postar Mensagem">
-						<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
-						<input type="hidden" name="comment_parent" id="comment_parent" value="0">
-					</p>
-				</form>
-			</div>
-		</div>
-	</div>
+                    <p class="comment-form-author">
+                        <label for="author">Nome completo</label>
+                        <span class="required">*</span>
+                        <input id="nomeCompleto" name="nomeCompleto" type="text" placeholder="Lorem ipsum" size="30"
+                            aria-required="true">
+                    </p>
+                    <p class="comment-form-email">
+                        <label for="email">E-mail</label>
+                        <span class="required">*</span>
+                        <input id="email" name="email" type="text" placeholder="leyla23@gmail.com" size="30"
+                            aria-required="true">
+                    </p>
+                    <p class="comment-form-url">
+                        <label for="url">Música preferida</label>
+                        <input id="url" name="url" type="text" placeholder="http://www.youtube.com/watch?v=pa14VNsdSYM"
+                            size="30">
+                    </p>
+                    <p class="comment-form-comment">
+                        <label for="comment">Sua mensagem</label>
+                        <textarea id="comment" name="comment"></textarea>
+                    </p>
+                    <p>
+                        <button type="button" name="button" id="acdButton">Enviar</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 	<div class="row">
@@ -201,6 +199,7 @@
 	<script src="cadastroescola.js"></script>
 	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="bootstrap/javascript/jquery.min.js"></script>
+	<script src="faleconoscologin.js"></script>
 </body>
 
 </html>

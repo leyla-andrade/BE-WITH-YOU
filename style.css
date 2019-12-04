@@ -718,7 +718,7 @@ h5 {
 .footer-body {
     margin-top: 0;
     padding: 40px;
-    background:#ffffff;
+    background:#d1d1d1b0;
     display: block;
 }
 
@@ -736,9 +736,9 @@ h5 {
 .footer-body  .linha {
     margin-right: 40px;
     margin-top: 15px;
-    color: #fdfdff;
+   
     font-weight: 800;
-    background-color: #fff;
+   
     list-style: none;
     font-size: 13px;
 }
@@ -746,7 +746,7 @@ h5 {
 .meio {
     overflow: hidden;
     width: 100%;
-    height: 700px;
+    height: 755px;
     background: url(assets/images/subst.svg);
 }
 
